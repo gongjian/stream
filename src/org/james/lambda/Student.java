@@ -12,6 +12,11 @@ public class Student {
 		this.name = name;
 		this.score = score;
 	}
+	
+	public Student(String name, int score) {
+		this.name = name;
+		this.score = new Double(score);
+	}
 
 	public String getName() {
 		return name;
