@@ -190,6 +190,7 @@ public class StreamOperation {
     // 生成List
     List<Student> list = Arrays.stream(students).collect(Collectors.toList());
     List<String> list1 = Arrays.stream(students).map(x -> x.getName()).collect(Collectors.toList());
+    list.forEach(System.out::println);
     list1.forEach(System.out::println);
 
     // 生成Set
